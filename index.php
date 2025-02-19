@@ -7,26 +7,53 @@
 </head>
 <body>
     <?php
-    $hola = array("mam" => "pl", "bab" => "ru");
-    print_r ($hola);
-    echo $hola["mam"];
-    
+        //     $hola = array("mam" => "pl", "bab" => "ru");
+        //     print_r ($hola);
+        //     echo $hola["mam"];
 
-$holi = [
-    ['blab', 'mario', 'eola', 20],
-    ['mil', 'zoro', 'maduro', 10],
-    ['bombini', 'malini', 'glupini',40]
-];
+        // $holi = [
+        //     ['blab', 'mario', 'eola', 20],
+        //     ['mil', 'zoro', 'maduro', 10],
+        //     ['bombini', 'malini', 'glupini',40]
+        // ];
 
+        // print_r($holi[0][3]);
+        // print_r($holi[1][0]);
+        // print_r($holi[2][2]);
 
-print_r($holi[0][3]);
-print_r($holi[1][0]);
-print_r($holi[2][2]);
+        // loops
 
+        $nina = ['sushi', 'mushi', 'dushi'];
+
+        for ($i = 0; $i < count($nina); $i++) {
+            echo $nina[$i] . '<br/>';
+        }
+
+        $products = [
+
+            ['name' => 'banan', 'cost' => 20],
+            ['name' => 'orang', 'cost' => 10],
+            ['name' => 'kiwi', 'cost' => 15],
+            ['name' => 'aple', 'cost' => 5],
+
+        ];
+
+        foreach ($products as $product) {
+            echo $product['name'] . '-' . $product['cost'];
+            echo '<br>';
+        }
 
     ?>
 
 <h1>hi</h1>
+
+<ul>
+    <?php foreach ($products as $product) {?>
+<h3><?php echo $product['name']; ?></h3>
+<p><?php echo $product['cost']; ?></p>
+<?php }?>
+</ul>
+
 
 
 

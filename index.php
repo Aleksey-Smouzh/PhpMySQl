@@ -9,8 +9,21 @@
     <?php
     $hola = array("mam" => "pl", "bab" => "ru");
     print_r ($hola);
-    echo $hola["mam"]
+    echo $hola["mam"];
     
+
+$holi = [
+    ['blab', 'mario', 'eola', 20],
+    ['mil', 'zoro', 'maduro', 10],
+    ['bombini', 'malini', 'glupini',40]
+];
+
+
+print_r($holi[0][3]);
+print_r($holi[1][0]);
+print_r($holi[2][2]);
+
+
     ?>
 
 <h1>hi</h1>

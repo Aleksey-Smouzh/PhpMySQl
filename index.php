@@ -45,6 +45,23 @@
 
     ?>
 
+<!-- ------------------------ cond stat -->
+
+<?php
+
+
+foreach($products as $product){
+if ($product['cost'] < 20 || $product['cost'] < 15){
+    echo $product['name'].'<br>';
+   
+}
+}
+
+?>
+
+
+
+
 <h1>hi</h1>
 
 <ul>
@@ -54,7 +71,22 @@
 <?php }?>
 </ul>
 
+<div class="">
 
+<ul>
+    <?php
+    foreach($products as $product){ ?>
+<?php if($product['cost'] > 15){ ?>
+
+<li><?php echo $product['name']; ?></li>
+
+<?php } ?>
+
+<?php } ?>
+
+</ul>
+
+</div>
 
 
 
